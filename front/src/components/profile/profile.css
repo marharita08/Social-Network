@@ -1,0 +1,33 @@
+.fields_width {
+    width: 250px;
+}
+
+.fields_height {
+    height: 56px;
+}
+
+.save {
+    display: block;
+}
+
+.label_name {
+    width: 170px;
+}
+
+.visibility {
+    width: 150px;
+}
+
+.user_img {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.file {
+    display: block;
+}
+
+.fields_margin {
+    margin: 10px;
+    margin-bottom: 30px;
+}
