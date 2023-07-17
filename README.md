@@ -1,12 +1,12 @@
 # Social-Network
 
-This repository contains the code for a prototype of a social network web application. The backend of the application is built using the Express.js framework, while the frontend is built using React. The database used is PostgreSQL. Both the backend and the database are deployed in Docker containers.
+This repository contains the code for a prototype of a social network web application. The backend of the application is built using the Yii2 framework, while the frontend is built using React. The database used is PostgreSQL.
 
 ## Features
 
 The application provides the following features:
 
-- User authentication and registration (including Google and Facebook authentication)
+- User authentication and registration 
 - Posting, liking, and commenting on posts
 - Adding other users as friends
 - Searching for users in the system
