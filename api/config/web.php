@@ -12,6 +12,13 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'response' => [
+            'class' => 'yii\web\Response',
+            'on beforeSend' => function ($event) {
+                $response = $event->sender;
+                $response->headers->set('Access-Control-Allow-Origin', 'http://localhost:3000');
+            },
+        ],
 		'jwt' => [
 				'class' => \sizeg\jwt\Jwt::class,
 				'key' => 'C1D1C045F1753BAEE77416D0E13FC02FF10A58A2C940EEC8F5F730E91317EA07', 

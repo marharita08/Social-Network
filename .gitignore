@@ -1,1 +1,5 @@
 /.idea/
+/api/web/images/
+/api/vendor/
+/front/node_modules/
+/front/.env

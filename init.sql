@@ -107,6 +107,6 @@ values ('Sumy State University'),
 
 create table if not exists session(
  user_id int not null,
- token   char(37) not null,
+ token   char(37) not null primary key,
  foreign key (user_id) references users (user_id) on delete cascade
 );

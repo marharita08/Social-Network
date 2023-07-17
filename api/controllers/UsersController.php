@@ -199,7 +199,7 @@ class UsersController extends \yii\rest\ActiveController
 		];
 	}
 	
-	public function actionRefresh() {
+	public static function actionRefresh() {
 		$refreshToken = Yii::$app->request->getBodyParam('refreshToken');
 		
 		if (!$refreshToken) {
@@ -221,7 +221,7 @@ class UsersController extends \yii\rest\ActiveController
 		];
 	}
 	
-	public function actionLogout() {
+	public static function actionLogout() {
 		$refreshToken = Yii::$app->request->getBodyParam('refreshToken');
 		$session = Session::findOne(['token' => $refreshToken]);
 		$session->delete();
